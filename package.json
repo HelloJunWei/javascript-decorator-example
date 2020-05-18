@@ -2,9 +2,10 @@
   "name": "javascript-decorator-example",
   "version": "1.0.0",
   "description": "Decorator pattern by javascript",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/HelloJunWei/javascript-decorator-example/issues"
   },
-  "homepage": "https://github.com/HelloJunWei/javascript-decorator-example#readme"
+  "homepage": "https://github.com/HelloJunWei/javascript-decorator-example#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
 }
